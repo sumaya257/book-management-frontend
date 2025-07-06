@@ -52,7 +52,7 @@ export default function BookList() {
     <div>
       <h1 className="text-2xl font-bold mb-6 text-purple-400">📚 Book List</h1>
 
-      {/* 🔥 Backend error alert */}
+      {/* backend error alert */}
       {error && (
         <Alert variant="destructive" className="mb-4">
           <AlertTitle>Error</AlertTitle>
@@ -86,7 +86,7 @@ export default function BookList() {
                 <TableCell>{book.copies}</TableCell>
                 <TableCell>{book.available ? "Yes" : "No"}</TableCell>
                 <TableCell className="flex flex-wrap justify-center gap-2">
-                  {/* 🖊️ Edit */}
+                  {/* Edit */}
                   <Button
                     size="icon"
                     className="bg-zinc-700 hover:bg-zinc-600 text-white"
@@ -95,7 +95,7 @@ export default function BookList() {
                     <Pencil size={16} />
                   </Button>
 
-                  {/* 👁 View */}
+                  {/* View */}
                   <Button
                     size="icon"
                     className="bg-blue-700 hover:bg-blue-600 text-white"
@@ -104,7 +104,7 @@ export default function BookList() {
                     <Eye size={16} />
                   </Button>
 
-                  {/* 📚 Borrow */}
+                  {/* Borrow */}
                   <Button
                     size="icon"
                     className={`text-white ${book.copies === 0 ? "bg-gray-500 cursor-not-allowed" : "bg-emerald-700 hover:bg-emerald-600"}`}
@@ -115,7 +115,7 @@ export default function BookList() {
                   </Button>
 
 
-                  {/* 🗑️ Delete Confirmation Dialog */}
+                  {/* Delete Confirmation Dialog */}
                   <Dialog>
                     <DialogTrigger asChild>
                       <Button

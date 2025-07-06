@@ -37,7 +37,7 @@ export default function Home() {
         </Button>
       </div>
 
-      {/* ✅ BookList Preview Section */}
+      {/* BookList Preview Section */}
       <div className="text-left mt-12 max-w-6xl mx-auto">
         <BookList />
       </div>
